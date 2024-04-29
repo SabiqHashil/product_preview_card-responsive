@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,48 +10,35 @@
   <title>Frontend Mentor | Product preview card component</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrapper">
-    <picture>
+    <picture role="img">
       <source media="(max-width: 500px)" srcset="images/image-product-mobile.jpg" alt="hero image">
       <source media="(min-width: 501px)" srcset="images/image-product-desktop.jpg" alt="hero image">
       <img class="left_image" src="images/image-product-desktop.jpg" alt="hero image">
     </picture>
-    <section class="right_container">
-      <p class="category">Perfume</p>
-      <h1 class="title fraunces">
+    <section class="right_container" role="main">
+      <p class="category" role="heading" aria-level="2">Perfume</p>
+      <h1 class="title fraunces" role="heading" aria-level="1">
         Gabrielle Essence Eau De Parfum
       </h1>
-      <p class="content">
+      <p class="content" role="paragraph">
         A floral, solar and voluptuous interpretation composed by Olivier Polge,
         Perfumer-Creator for the House of CHANEL.
       </p>
-      <div class="price_container">
-        <p class="currentprice fraunces">
-          $149.99
-        </p>
-        <p class="previousprice">
-          $169.99
-        </p>
+      <div class="price_container" role="region">
+        <p class="currentprice fraunces">$149.99</p>
+        <p class="previousprice">$169.99</p>
       </div>
-      <button class="addtocart">
+      <button class="addtocart" role="button">
         <img src="images/icon-cart.svg" alt="cart">
         <span>Add to Cart</span>
       </button>
     </section>
-
-   
-    </div>
   </div>
 </body>
-
 </html>
